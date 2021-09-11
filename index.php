@@ -22,5 +22,8 @@ require __DIR__ . '\vendor\autoload.php';
 // Enqueue Scripts & Styles
 // $enqueue = new CPF\Base\Enqueue();
 // $enqueue->initialize();
-// TESTING LOREM SHORTCODE
+
+// TESTING DYNAMIC EXP DATE SHORTCODE
 $social_shortcode = new CPF\Shortcode\DateExpireTomorrow();
+// TESTING FIXED FOOTER CODE
+$fixed_footer_ac = new CPF\Widgets\StickyFooterFixed();

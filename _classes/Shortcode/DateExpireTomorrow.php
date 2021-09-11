@@ -41,7 +41,8 @@
 
   <div class="" style="padding-top: 2rem;">
 
-    <h2 class="text-center"><?php echo $content; ?></h2>
+    <h2 class=""><?php echo $content; ?></h2>
+    <h2 class=""><?php echo $this->getTomorrowsDate(); ?></h2>
 
 
   </div>
@@ -61,5 +62,15 @@
    return $module_contents;
   }
 
- // END
-}
+  // END displayOfferExpireBlock FUNCTION
+
+  private function getTomorrowsDate()
+  {
+   $today    = date('m-d-y');
+   $date1    = str_replace('-', '/', $date);
+   $tomorrow = date('F d, Y', strtotime($date1 . "+1 days"));
+
+   return $tomorrow;
+  }
+
+} // END OF THE CLASS
