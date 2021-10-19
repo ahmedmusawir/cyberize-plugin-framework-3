@@ -17,7 +17,7 @@ if (!defined('WPINC')) {
 
 define('CYBERIZE_PLUGIN_DIR', plugins_url('', __FILE__));
 
-require __DIR__ . '\vendor\autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 
 // Enqueue Scripts & Styles
 // $enqueue = new CPF\Base\Enqueue();

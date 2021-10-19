@@ -5,7 +5,7 @@
  */
 var gulp = require('gulp');
 var rename = require('gulp-rename');
-var scss = require('gulp-sass');
+var scss = require('gulp-sass')(require('node-sass'));
 var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
 var browserify = require('browserify');
